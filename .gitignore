@@ -1,0 +1,13 @@
+var downloadExcel = function() {
+		var path;
+		var method = "post";
+		path = "fare/download";
+
+		var form = document.createElement("form");
+		form.setAttribute("id", "generateForm");
+		form.setAttribute("method", method);
+		form.setAttribute("action", path);
+		document.body.appendChild(form);
+
+		form.submit();
+	}
